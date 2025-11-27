@@ -1,14 +1,20 @@
-import React from 'react';
+import { Link, Outlet } from 'react-router';
 
 const Playground = () => {
   return (
     <>
-      <h1>Playground</h1>
-      <ul>
-        <li>
-          <a href="/playground/calculator">calculator</a>
-        </li>
-      </ul>
+      <header>
+        <span>Playground</span>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/playground/calculator">Calculator</Link>
+          </li>
+        </ul>
+      </header>
+      <Outlet />
     </>
   );
 };

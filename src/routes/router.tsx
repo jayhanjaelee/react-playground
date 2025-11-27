@@ -1,7 +1,7 @@
 import { createBrowserRouter } from 'react-router';
 
 import App from '../App.tsx';
-import Playground from '../routes/Playground.tsx';
+import Layout from '../components/Layout.tsx';
 import Calculator from '../components/Calculator.tsx';
 
 const router = createBrowserRouter([
@@ -11,7 +11,7 @@ const router = createBrowserRouter([
   },
   {
     path: 'playground',
-    Component: Playground,
+    Component: Layout,
     children: [
       {
         path: 'calculator',
